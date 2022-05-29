@@ -22,7 +22,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">回首頁</a>
               </li>
@@ -50,11 +50,11 @@
                     ><i class="fa-solid fa-user-large"></i
                   ></router-link>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item" @click="filter = 'buy'">
                   <a class="nav-link" href="shoppingCart.html"
                     ><i class="fa-solid fa-cart-shopping"></i
                   ></a>
-                </li>
+                </li> -->
               </div>
             </ul>
           </div>
