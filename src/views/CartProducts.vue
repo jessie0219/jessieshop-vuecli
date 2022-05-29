@@ -49,7 +49,11 @@
               </p>
               <p class="button d-flex justify-content-evenly">
                 <button
-                  @click="toggleBuy(item.id)"
+                  :src="item"
+                  @click="
+                    toggleBuy(item.id);
+                    getItemName(item);
+                  "
                   v-if="addCart == 'all'"
                   class="btn favcolor"
                 >
@@ -132,6 +136,7 @@ export default {
         },
       ],
       buying: {},
+      getName: "",
       addCart: "all",
     };
   },
@@ -145,12 +150,14 @@ export default {
     },
     toggleFavorite(which) {
       this.products[which].favorite = !this.products[which].favorite;
-      // this.localStorage.setItem(this.products[which].favorite, this.products);
     },
     toggleBuy(id) {
       this.buying[id] = !this.buying[id];
-      alert(`已將商品加入購物車!`);
-      console.log(this.buying[id]);
+      // alert(`已將商品加入購物車!`);
+    },
+    getItemName(name) {
+      this.getName = name;
+      alert(`已將 "${this.getName.name}" 加入購物車!`);
     },
     addCount(item) {
       console.log(item);
