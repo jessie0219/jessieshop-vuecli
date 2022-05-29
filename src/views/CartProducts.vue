@@ -82,7 +82,7 @@ export default {
       products: [
         {
           id: 1,
-          name: "RAM燈",
+          name: "Rick and Morty 造型桌燈",
           imgUrl:
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpZJZDfcZrhUbL4u0crD8eBozlhamssUYDBQdpAvF_msFGp9_ChqXEpeKD5jORpLprkOkcK3Wae6BKaRpcHiralzEQ-nacx9iUEP3afzi0dkz5-2ZLTkft7VjBf0U5YVX1Tkv8D9qEbmMF9hKUVN-CbnFoctz7cy5J-aDxirl84GHevP4YGj6AcPls1A/s320/RAM%E7%87%88.jpg",
           price: 1900,
@@ -100,10 +100,10 @@ export default {
         },
         {
           id: 3,
-          name: "happi class迷你漢堡椅子",
+          name: "Happi class迷你漢堡椅子",
           imgUrl:
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzJoHj-MkWWn6F0H93w1PvMi2oMh1nDQvCQImeoSM22TnuignnU-qEt9irfJIoecX3TOW6p853duYKH7QLDErajExp_1XqKZl1xU485DKv1-aiKtJ5A1LWgLEjN7uB9JO4Js7ZIWPRrhiIypB8tIM7502Vao54wuy8XPmCR64g5zFUPuagG2xzQCnItA/s320/happi%20class%E8%BF%B7%E4%BD%A0%E6%BC%A2%E5%A0%A1%E6%A4%85%E5%AD%90.jpg",
-          price: 9000,
+          price: 4500,
           favorite: false,
           count: 0,
         },
@@ -118,7 +118,7 @@ export default {
         },
         {
           id: 5,
-          name: "回到未來燈",
+          name: "回到未來 造型夜燈",
           imgUrl:
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSFOY6pTY6cy4MKf9PWeX4pSykeYWAZ4N5nFlIU9mv9oXAIIuSYWok8Afe0k_oX7hV22Y9mT84y1QMIaqATsmOfK5kjIC9eJySyDlF1A00f9W_X9Bs-pcALD5nNMuUKIhq8O7OH4UvQGQvsvRpyFCpkqyXw6S-DKCZxoeKDdzkD9nSkv0RtcdjnnJGNQ/s320/%E5%9B%9E%E5%88%B0%E6%9C%AA%E4%BE%86%E7%87%88.jpg",
           price: 1720,
@@ -131,6 +131,33 @@ export default {
           imgUrl:
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifGuqI1VYGLOr6SUVWyYMm0p5xtqKkwaIU2gz0xTe9BLy0VGOeWrZUN-2nAwsOMB59b9ugF53yT3aXeqZNOHTLrMgqOjfqChbqY3-Q5c3ilVruzYCTqpf6UUpjnjKoAq3lnM6-4xpUIpG4SIOogRhmz5dCQMTdHcrvE-2fb3OSUumOvlOFGTVw5Lurxg/s320/Avenger-%E5%A5%87%E7%95%B0%E5%8D%9A%E5%A3%AB.jpg",
           price: 2100,
+          favorite: false,
+          count: 0,
+        },
+        {
+          id: 7,
+          name: "Rick and Morty 造型水壺",
+          imgUrl:
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzszPc0m203N10XqoYs2gyh8UKQ-ngAkowK0Mdv2Qxt377FW-C7l4I9zE_VDHKCzH5Jl2uh6bkH48xrBW7Gn-wopXPWDGCr6wCRx5g36mURetrqN3GrCTZ4DvppMf0yKarRcZmUStqxsV-WBMl5N74ZhI4nIfI4DSYo8FeQ0c8ztPIyDix8dsah4D9vw/s320/RAM%E6%B0%B4%E5%A3%BA.jpg",
+          price: 1180,
+          favorite: false,
+          count: 0,
+        },
+        {
+          id: 8,
+          name: "經文寬麵",
+          imgUrl:
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCWoUe7fxz3L4okW3XhvnfyYNzXiLmu_4saDy2KDeFZDhhtIsFvE7hThh1TbkquVNhYzXY0OXcMG3s5Q5fT5iE8Kfqgm-u0YoGvmi0P86purp5jDUU1Oo5E2fTKJXaiLT7FQmj_ezm7B0XctACQ3xAP5Qrt4zxtKwDR8Miy_iqfM_EDA7y-YZak7WIiw/s320/%E6%B3%95%E7%87%88%E7%B6%93%E6%96%87%E9%BA%B5.jpg",
+          price: 980,
+          favorite: false,
+          count: 0,
+        },
+        {
+          id: 9,
+          name: "Happi class 漢堡檯燈",
+          imgUrl:
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3pMlQJ67gFss7AJJ9fJ1ip8aw_a6xOg_VLmgdQPrB3RS9gLyCyoWSjymCGNtLyK34rGXro_YFmVlncoslCLfck57fN1qrA49UVn7r7_NopX2P5r4Hc2G0b3UnuSJVc5wEfRpyAKgpB4ErGVycGtPJsi_hBmfZyn_-1sb2CU1FwaPErhrmmIUMgbH7sQ/s320/happi%20class%E6%BC%A2%E5%A0%A1%E6%A4%85%E5%AD%90.jpg",
+          price: 9800,
           favorite: false,
           count: 0,
         },

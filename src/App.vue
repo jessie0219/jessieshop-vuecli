@@ -87,7 +87,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-left">
-          <a href="#header">
+          <a href="#">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHr8wk0gTCX9sXPMTwsQYKvKYSQ0ttJgSoIQwPjnURYG9pXodwUPOXKbBIizkNy5W8dMN80B0x1wO0WYp_xU-SX7vrPy-65qE825Kb8ll7JVFh6nARhP5QtigqcGJxQq973bUkGtm56xUmBqSmbs1p259_cj-opvNUDnJEqz3PRUuG0DkkvxGahrUw5w/s1600/logo.jpg"
               alt=""
