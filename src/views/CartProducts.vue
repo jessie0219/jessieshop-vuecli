@@ -4,7 +4,7 @@
       <div class="text-center mb-5">
         <a class="btn" @click="addCart = 'all'">全部商品</a>
         <a class="btn mx-5" @click="addCart = 'buy'"
-          ><i class="fa-solid fa-cart-shopping"></i>(0)</a
+          ><i class="fa-solid fa-cart-shopping"></i>({{ totalCount }})</a
         >
         <a class="btn mx-3" v-if="addCart == 'buy'" @click="pay">結帳</a>
       </div>
@@ -53,6 +53,8 @@
                   @click="
                     toggleBuy(item.id);
                     getItemName(item);
+                    // totalCount();
+                    addCountAll(item);
                   "
                   v-if="addCart == 'all'"
                   class="btn favcolor"
@@ -186,8 +188,11 @@ export default {
       this.getName = name;
       alert(`已將 "${this.getName.name}" 加入購物車!`);
     },
+    addCountAll(item) {
+      item.count++;
+    },
     addCount(item) {
-      console.log(item);
+      // console.log(item);
       item.count++;
     },
     reduceCount(item) {
@@ -206,6 +211,9 @@ export default {
       } else if (this.addCart === "buy") {
         return this.products.filter((item) => this.buying[item.id]);
       }
+    },
+    totalCount() {
+      return this.products.reduce((total, item) => total + item.count, 0);
     },
   },
 };
