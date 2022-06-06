@@ -54,7 +54,7 @@
                     toggleBuy(item.id);
                     getItemName(item);
                     // totalCount();
-                    addCountAll(item);
+                    addCount(item);
                   "
                   v-if="addCart == 'all'"
                   class="btn favcolor"
@@ -187,9 +187,6 @@ export default {
     getItemName(name) {
       this.getName = name;
       alert(`已將 "${this.getName.name}" 加入購物車!`);
-    },
-    addCountAll(item) {
-      item.count++;
     },
     addCount(item) {
       // console.log(item);
