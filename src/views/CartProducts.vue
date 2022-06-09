@@ -213,6 +213,13 @@ export default {
       return this.products.reduce((total, item) => total + item.count, 0);
     },
   },
+  // async created() {
+  //   const { data: res } = await this.$axios.get(
+  //     "http://localhost:8080/getProducts.php"
+  //   );
+  // console.log("axios請求拿到的值:", res);
+  // this.products = res;
+  // },
 };
 </script>
 

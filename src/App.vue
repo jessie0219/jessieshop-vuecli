@@ -120,8 +120,8 @@
 </template>
 
 <script>
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 // var nav = document.querySelector("#nav");
-
 // window.addEventListener("scroll", function () {
 //   if (this.window.pageYOffset > 100) {
 //     nav.classList.add("bg-dark", "shadow");
@@ -207,7 +207,6 @@ header li {
 /* @media screen and (max-width:768px){
     
 } */
-
 #latest {
   padding: 80ox 0;
   background: rgb(248, 248, 248);
@@ -326,9 +325,7 @@ footer i {
   margin-left: 100px;
   margin-top: 20px;
 }
-
 /* ///////////////////////PRODUCTS-CSS/////////////////////// */
-
 section.pics {
   height: 100vh;
   display: grid;
@@ -344,7 +341,6 @@ section.pics .slider {
   overflow: hidden;
   bottom: 13%;
 }
-
 .slide-track {
   display: flex;
   width: calc(500px * 18);
@@ -376,7 +372,6 @@ section.pics .slide img {
 section.pics .slide img:hover {
   transform: translateZ(20px);
 }
-
 /* shadow */
 .slider::before,
 .slider::after {

@@ -10,13 +10,24 @@ module.exports = {
       })
     ]
   },
+
   publicPath: process.env.NODE_ENV === 'production'
     ? '/jessieshop-vuecli/'
-    : '/'
+    : '/',
+
+  pluginOptions: {
+    vuetify: {
+			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+		}
+  }
 }
 
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+
+  pluginOptions: {
+    vuetify: {}
+  }
 })
